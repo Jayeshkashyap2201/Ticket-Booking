@@ -43,7 +43,17 @@ class _TicketScreenState extends State<TicketScreen> {
               const SizedBox(height: 20),
               Container(
                   padding: EdgeInsets.only(left: 12),
-                  child: TicketViewPage(ticket:ticketList[0])),
+                  child: Column(
+                    children: [
+                      TicketView(ticket:ticketList[0]),
+                      TicketView(ticket:ticketList[1]),
+                      TicketView(ticket:ticketList[2]),
+                      TicketView(ticket:ticketList[3]),
+                      TicketView(ticket:ticketList[4]),
+                      TicketView(ticket:ticketList[5]),
+                      TicketView(ticket:ticketList[6]),
+                    ],
+                  )),
             ],
             ),
           ],

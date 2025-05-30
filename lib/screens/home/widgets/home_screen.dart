@@ -77,14 +77,18 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: AppDoubleText(
                     bigText: "Upcoming flights",
                     smallText: "viewall",
-                    func:()=>Navigator.pushNamed(context, AppRouts.TicketScreen),
+                    func:()=>Navigator.pushNamed(context, AppRouts.AllTicket),
                   ),
                 ),
                 const SizedBox(height: 20),
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
-                    children: ticketList.take(2).map((singleTicket)=> TicketView(ticket: singleTicket),
+                    children: ticketList.take(2).map((singleTicket)=> GestureDetector(
+                        onTap: (){
+                          Navigator.pushNamed(context, AppRouts.TicketViewPage , arguments: singleTicket);
+                        },
+                        child: TicketView(ticket: singleTicket)),
                     ).toList(),
                   ),
                 ),

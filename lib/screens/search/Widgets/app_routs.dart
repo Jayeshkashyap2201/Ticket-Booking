@@ -1,3 +1,4 @@
+import 'package:transport_booking/base/widgets/ticket_view_page.dart';
 import 'package:transport_booking/screens/home/widgets/all_ticket.dart';
 import 'package:transport_booking/screens/home/widgets/hotel.dart';
 import 'package:transport_booking/screens/home/widgets/hotel_detail.dart';
@@ -11,5 +12,6 @@ class AppRouts{
   static const Hotel = '/hotel';
   static const Ticket = '/ticket_view';
   static const HotelDetail ='/hotel_detail';
+  static const TicketViewPage = '/ticketViewPage';
 
 }

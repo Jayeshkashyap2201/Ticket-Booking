@@ -20,7 +20,7 @@ class TicketViewPage extends StatelessWidget {
       //height: 700,
       child: Container(
         margin: EdgeInsets.only(right: 16,left: 16),
-        child: Column(
+        child: ListView(
           children: [
             Container(
               padding: EdgeInsets.all(16),
@@ -174,7 +174,7 @@ class TicketViewPage extends StatelessWidget {
                               child: Row(
                                 children: [
                                   Image(image: AssetImage('images/visa.png'),),
-                                  Text("******2455"),
+                                  Text("******2455",style: TextStyle(fontSize: 15),),
                                 ],
                               ),
                           ),
@@ -212,7 +212,7 @@ class TicketViewPage extends StatelessWidget {
                       height: 100,
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(15),
-                        child: BarcodeWidget( barcode: Barcode.code128(),data: 'https://www.bharat_ghumo.com',
+                        child: BarcodeWidget( barcode: Barcode.code128(),data: 'https://www.bharat_ghumo.com',style: TextStyle(fontSize: 15),
                         height: 70,
                         ),
                       ),
