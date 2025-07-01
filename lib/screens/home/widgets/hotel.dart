@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:transport_booking/base/res/styles/app_styles.dart';
-import 'package:transport_booking/base/res/styles/media.dart';
-import 'package:transport_booking/base/utils/hotel_json.dart';
 class Hotel extends StatelessWidget {
   final Map<String , dynamic> hotel;
   const Hotel ({super.key, required this.hotel});

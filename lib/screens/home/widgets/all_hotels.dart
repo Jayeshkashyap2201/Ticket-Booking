@@ -23,8 +23,8 @@ class AllHotels extends StatelessWidget {
                   GestureDetector(
                     onTap: (){
                       var index = hotel_list.indexOf(singleTicket);
-                      print("your index is $index");
-                      Navigator.pushNamed(context, AppRouts.HotelDetail, arguments: {index : index});
+                      //print("your index is $index");
+                      Navigator.pushNamed(context, AppRouts.HotelDetail, arguments: index);
                     },
                     child: Container(
                         margin: EdgeInsets.only(bottom: 10),

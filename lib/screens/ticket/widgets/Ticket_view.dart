@@ -90,31 +90,32 @@ class TicketView extends StatelessWidget {
                 ),
                 child:  Column(
                   children:<Widget> [
-                    // show departure and destination with icons first line
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          AppColumnTextLayout(
-                              topText: ticket['date'] ,
-                              bottomText:'Date',
-                              isColor: Colors.white,
-                              alignment: CrossAxisAlignment.start),
-                          AppColumnTextLayout(
-                              topText: ticket['departure_time'] ,
-                              isColor: Colors.white,
-                              bottomText:'Departure Time',
-                              alignment: CrossAxisAlignment.center),
-                          AppColumnTextLayout(
-                              topText: ticket['number'].toString() ,
-                              bottomText:'Number',
-                              isColor: Colors.white,
-                              alignment: CrossAxisAlignment.end),
-                      ],
+                    // orange part
+                    SafeArea(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            AppColumnTextLayout(
+                                topText: ticket['date'] ,
+                                bottomText:'Date',
+                                isColor: Colors.white,
+                                alignment: CrossAxisAlignment.start),
+                            AppColumnTextLayout(
+                                topText: ticket['departure_time'] ,
+                                isColor: Colors.white,
+                                bottomText:'Departure Time',
+                                alignment: CrossAxisAlignment.center),
+                            AppColumnTextLayout(
+                                topText: ticket['number'].toString() ,
+                                bottomText:'Number',
+                                isColor: Colors.white,
+                                alignment: CrossAxisAlignment.end),
+                        ],
+                      ),
                     ),
                   ],
                 ),
               ),
-              //orange part of the ticket
             ],
           ),
         ),

@@ -37,7 +37,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
         onTap: _onItemTapped,
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.blueGrey,
-        unselectedItemColor: Colors.blueGrey[100],
+        unselectedItemColor: Colors.blueGrey[300],
         showSelectedLabels: true,
         items:const [
         BottomNavigationBarItem(icon: Icon(FluentSystemIcons.ic_fluent_home_regular),

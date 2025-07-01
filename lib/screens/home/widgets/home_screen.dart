@@ -104,7 +104,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
-                    children: hotel_list.take(3).map((singleHotel) => Hotel(hotel: singleHotel),
+                    children: hotel_list.take(3).map((singleHotel) => GestureDetector(
+                      onTap: (){
+                        Navigator.pushNamed(context, AppRouts.HotelDetail);
+                      },
+                        child: Hotel(hotel: singleHotel)),
                       ).toList(),
                   ),
                 ),

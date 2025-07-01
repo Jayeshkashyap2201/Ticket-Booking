@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:transport_booking/base/bottom_nav_bar_.dart';
-import 'package:transport_booking/base/utils/at_json.dart';
 import 'package:transport_booking/base/widgets/ticket_view_page.dart';
 import 'package:transport_booking/screens/home/widgets/all_hotels.dart';
 import 'package:transport_booking/screens/home/widgets/all_ticket.dart';
